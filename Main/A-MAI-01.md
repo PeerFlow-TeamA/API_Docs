@@ -64,8 +64,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ## 응답시 데이터
 
-[Response Body](https://www.notion.so/7877fd1d3fc749b8a10bed049ff0aa82?pvs=21)
-
 ### 성공
 
 #### 데이터가 존재할 경우
