@@ -70,6 +70,11 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 {
     // 없음
 }
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    // 없음
+}
 ```
 
 ***
