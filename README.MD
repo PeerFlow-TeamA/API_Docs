@@ -31,24 +31,24 @@
 
 | 기능명세 코드 | API 문서 위치 | 문서 설명 |
 | --- | --- | --- |
-| A-MAI-00 | ./main/A-MAI-00.md | 게시판 메인페이지의 질문 목록 조회 |
-| A-MAI-01 | ./main/A-MAI-01.md | 게시판 질문 검색 |
-| B-WRI-00 | ./question/B-WRI-00.md | 질문 게시글 작성하기 |
-| B-WRI-01 | ./question/B-WRI-01.md | 질문 게시글 수정하기 |
-| B-WRI-02 | ./question/B-WRI-02.md | 질문 게시글 삭제하기 |
-| C-DET-00 | ./question/C-DET-00.md | 질문 게시글 상세 조회 |
-| C-DET-01 | ./answer/C-DET-01.md | 답글 작성하기 |
-| C-DET-02 | ./answer/C-DET-02.md | 답글 수정하기 |
-| C-DET-03 | ./answer/C-DET-03.md | 답글 삭제하기 |
-| C-DET-04 | ./answer/C-DET-04.md | 답글 채택하기 |
-| C-DET-05 | ./question/comment/C-DET-05.md | 질문 댓글 작성하기 |
-| C-DET-06 | ./question/comment/C-DET-06.md | 질문 댓글 수정하기 |
-| C-DET-07 | ./question/comment/C-DET-07.md | 질문 댓글 삭제하기 |
-| C-DET-08 | ./question/comment/C-DET-08.md | 특정 질문 글에 쓰여진 모든 댓글 조회하기 |
-| C-DET-09 | ./answer/comment/C-DET-09.md | 답글의 댓글 작성하기 |
-| C-DET-10 | ./answer/comment/C-DET-10.md | 답글의 댓글 수정하기 |
-| C-DET-11 | ./answer/comment/C-DET-11.md | 답글의 댓글 삭제하기 |
-| C-DET-12 | ./answer/comment/C-DET-12.md | 특정 답글에 쓰여진 모든 댓글 조회하기 |
+| A-MAI-00 | [./main/A-MAI-00.md](./main/A-MAI-00.md) | 메인페이지 질문 목록 조회 |
+| A-MAI-01 | [./main/A-MAI-01.md](./main/A-MAI-01.md) | 게시판 게시글 검색 |
+| B-WRI-00 | [./question/B-WRI-00.md](./question/B-WRI-00.md) | 게시글 (질문) 작성하기 |
+| B-WRI-01 | [./question/B-WRI-01.md](./question/B-WRI-01.md) | 게시글 (질문) 수정하기 |
+| B-WRI-02 | [./question/B-WRI-02.md](./question/B-WRI-02.md) | 게시글 (질문) 삭제하기 |
+| C-DET-00 | [./question/C-DET-00.md](./question/C-DET-00.md) | 게시글 (질문) 상세 조회하기 |
+| C-DET-01 | [./answer/C-DET-01.md](./answer/C-DET-01.md) | 답글 작성하기 |
+| C-DET-02 | [./answer/C-DET-02.md](./answer/C-DET-02.md) | 답글 수정하기 |
+| C-DET-03 | [./answer/C-DET-03.md](./answer/C-DET-03.md) | 답글 삭제하기 |
+| C-DET-04 | [./answer/C-DET-04.md](./answer/C-DET-04.md) | 답글 채택하기 |
+| C-DET-05 | [./question/comment/C-DET-05.md](./question/comment/C-DET-05.md) | 질문 댓글 작성하기 |
+| C-DET-06 | [./question/comment/C-DET-06.md](./question/comment/C-DET-06.md) | 질문 댓글 수정하기 |
+| C-DET-07 | [./question/comment/C-DET-07.md](./question/comment/C-DET-07.md) | 질문 댓글 삭제하기 |
+| C-DET-08 | [./question/comment/C-DET-08.md](./question/comment/C-DET-08.md) | 특정 질문 글에 쓰여진 모든 댓글 조회하기 |
+| C-DET-09 | [./answer/comment/C-DET-09.md](./answer/comment/C-DET-09.md) | 답글의 댓글 작성하기 |
+| C-DET-10 | [./answer/comment/C-DET-10.md](./answer/comment/C-DET-10.md) | 답글의 댓글 수정하기 |
+| C-DET-11 | [./answer/comment/C-DET-11.md](./answer/comment/C-DET-11.md) | 답글의 댓글 삭제하기 |
+| C-DET-12 | [./answer/comment/C-DET-12.md](./answer/comment/C-DET-12.md) | 특정 답글에 쓰여진 모든 댓글 조회하기 |
 
 
 
