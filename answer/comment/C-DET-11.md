@@ -101,7 +101,8 @@ STATUS CODE: 403 FORBIDDEN
 }
 ```
 
-#### answerId에 해당하는 답글이 존재하지 않을 때
+#### answerId에 해당하는 답글이 존재하지 않을 경우
+<!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
@@ -109,11 +110,12 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "answer not found"
+    "message" : "Answer not found"
 }
 ```
 
-#### commentId에 해당하는 댓글이 존재하지 않을 때
+#### commentId에 해당하는 답글의 댓글이 존재하지 않을 경우
+<!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
@@ -121,7 +123,7 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "comment on answer not found"
+    "message": "Comment on answer not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->
