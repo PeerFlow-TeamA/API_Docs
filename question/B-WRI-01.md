@@ -4,13 +4,13 @@
 
 
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
-URL(endpoint): 
+URL(endpoint): /v1/question/{questionId}
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
-method: 
+method: PUT
 
 <!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
-기능명세 코드:
+기능명세 코드: B-WRI-01
 
 ## 요청시 데이터
 
