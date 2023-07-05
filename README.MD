@@ -45,6 +45,11 @@
 | C-DET-06 | ./question/comment/C-DET-06.md | 질문 댓글 수정하기 |
 | C-DET-07 | ./question/comment/C-DET-07.md | 질문 댓글 삭제하기 |
 | C-DET-08 | ./question/comment/C-DET-08.md | 특정 질문 글에 쓰여진 모든 댓글 조회하기 |
+| C-DET-09 | ./answer/comment/C-DET-09.md | 답글의 댓글 작성하기 |
+| C-DET-10 | ./answer/comment/C-DET-10.md | 답글의 댓글 수정하기 |
+| C-DET-11 | ./answer/comment/C-DET-11.md | 답글의 댓글 삭제하기 |
+| C-DET-12 | ./answer/comment/C-DET-12.md | 특정 답글에 쓰여진 모든 댓글 조회하기 |
+
 
 
 
