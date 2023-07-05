@@ -94,7 +94,7 @@ STATUS CODE: 201 CREATED
 
 ### 실패
 
-#### 잘못된 비밀번호로 수정을 시도했을 때
+#### 잘못된 비밀번호로 요청을 보낼 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
@@ -116,7 +116,7 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message": "question not found",
+    "message": "Question not found",
 }
 ```
 

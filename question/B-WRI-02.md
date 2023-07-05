@@ -86,7 +86,7 @@ STATUS CODE: 204 No Content
 
 ### 실패
 
-#### 잘못된 비밀번호로 삭제를 시도했을 때
+#### 잘못된 비밀번호로 요청을 보낼 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
@@ -99,16 +99,16 @@ STATUS CODE: 403 FORBIDDEN
 }
 ```
 
-#### questionId에 해당하는 질문이 없을 때
+#### questionId에 해당하는 질문이 존재하지 않을 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 404 Not Found
+STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message": "question not found"
+    "message": "Question not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->

@@ -97,7 +97,7 @@ STATUS CODE: 200 OK
 
 ### 실패
 
-#### questionId에 해당하는 질문이 없을 때
+#### questionId에 해당하는 질문이 존재하지 않을 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
@@ -106,7 +106,7 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message": "question not found"
+    "message": "Question not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->
