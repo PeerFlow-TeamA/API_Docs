@@ -8,13 +8,13 @@ URL(endpoint): /v1/answer/{answerId}/comment
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: POST
 
-<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+<!-- 요청 시 기능명세 코드 입니다. API가 활용되는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-09
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Parameter 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
 Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body" checked>

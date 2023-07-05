@@ -10,18 +10,20 @@ URL(endpoint): /v1/question/{questionId}
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: GET
 
-<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+<!-- 요청 시 기능명세 코드 입니다. API가 활용되는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-00
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Parameter 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
-Path Parameter : <input type="checkbox" value="Path Parameter" checked>
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
+Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body">
 
-### Path Parameter
+Query Parameter : <input type="checkbox" value="Query Parameter" checked>
+
+### Query Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -39,12 +41,17 @@ Request Body : <input type="checkbox" value="Request Body">
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "questionId": "1"
+    // 없음
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
     // 없음
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    "questionId": 1
 }
 ```
 

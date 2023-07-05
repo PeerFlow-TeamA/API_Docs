@@ -14,11 +14,14 @@ method: POST
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Parameter 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
+
 Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body" checked>
+
+Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ### Request Body 
 
@@ -53,6 +56,11 @@ Request Body : <input type="checkbox" value="Request Body" checked>
   "password": "1234"
   "content": "minishell 이렇게 하시면 됩니다."
   "createdAt": "2023-07-01T12:12:12"
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    // 없음
 }
 ```
 

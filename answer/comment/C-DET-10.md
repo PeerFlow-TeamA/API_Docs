@@ -93,6 +93,18 @@ STATUS CODE: 201 CREATED
 
 ### 실패
 
+#### 잘못된 비밀번호로 수정을 시도했을 때
+
+```json
+// 응답시 HTTP Status Code는 아래와 같습니다.
+STATUS CODE: 403 FORBIDDEN
+
+// 아래는 응답시 전달될 데이터 예시입니다.
+{
+    "message": "Password is incorrect"
+}
+```
+
 #### answerId에 해당하는 답글이 존재하지 않을 때
 
 ```json

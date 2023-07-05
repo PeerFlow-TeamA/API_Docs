@@ -9,16 +9,31 @@ URL(endpoint): /v1/question/{questionId}/comments?page={page}&size={size}
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: GET
 
-<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+<!-- 요청 시 기능명세 코드 입니다. API가 활용되는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-08
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Parameter 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
 Path Parameter : <input type="checkbox" value="Path Parameter" checked>
 
 Request Body : <input type="checkbox" value="Request Body">
+
+Query Parameter : <input type="checkbox" value="Query Parameter" checked>
+
+### Path Parameter
+
+<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
+<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
+<!-- Key는 요청 시 데이터의 Key를,
+    Data-Type은 요청 시 데이터의 Data-Type을,
+    Description은 요청 시 데이터의 설명을,
+    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
+| Key | Data-Type | Description | Condition |
+| --- | --- | --- | --- |
+| page | int | 페이지 번호 | |
+| size | int | 페이지 사이즈 | |
 
 ### Path Parameter
 
@@ -31,22 +46,24 @@ Request Body : <input type="checkbox" value="Request Body">
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
 | questionId | int | 질문의 id | |
-| page | int | 페이지 번호 | |
-| size | int | 페이지 사이즈 | |
 
 ### 예시
 
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "questionId": 1,
-    "page": 1,
+    "page": 0,
     "size": 10
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
     // 없음
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    "questionId": 1
 }
 ```
 
@@ -85,14 +102,14 @@ STATUS CODE: 200 OK
         },
         "offset": 0,
         "pageNumber": 0,
-        "pageSize": 20,
+        "pageSize": 10,
         "paged": true,
         "unpaged": false
     },
     "last": true,
     "totalElements": 1,
     "totalPages": 1,
-    "size": 20,
+    "size": 10,
     "number": 0,
     "sort": {
         "empty": true,
@@ -127,14 +144,14 @@ STATUS CODE: 200 OK
         },
         "offset": 0,
         "pageNumber": 0,
-        "pageSize": 20,
+        "pageSize": 10,
         "paged": true,
         "unpaged": false
     },
     "last": true,
     "totalElements": 0,
     "totalPages": 0,
-    "size": 20,
+    "size": 10,
     "number": 0,
     "sort": {
         "empty": true,

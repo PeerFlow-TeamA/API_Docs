@@ -9,29 +9,18 @@ URL(endpoint): /v1/question/{questionId}/comments/{commentId}
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: POST
 
-<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+<!-- 요청 시 기능명세 코드 입니다. API가 활용되는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-07
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Parameter 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
-Path Parameter : <input type="checkbox" value="Path Parameter" checked>
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
+Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body" checked>
 
-### Path Parameter
-
-<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
-<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
-<!-- Key는 요청 시 데이터의 Key를,
-    Data-Type은 요청 시 데이터의 Data-Type을,
-    Description은 요청 시 데이터의 설명을,
-    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
-| Key | Data-Type | Description | Condition |
-| --- | --- | --- | --- |
-| questionId | int | 질문의 id | |
-| commentId | int | 댓글의 id | |
+Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 ### Request Body 
 
@@ -45,18 +34,36 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 | --- | --- | --- | --- |
 | password | string | 질문의 댓글을 작성한 사용자가 작성시 입력했던 비밀번호 | |
 
+### Query Parameter
+
+<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
+<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
+<!-- Key는 요청 시 데이터의 Key를,
+    Data-Type은 요청 시 데이터의 Data-Type을,
+    Description은 요청 시 데이터의 설명을,
+    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
+| Key | Data-Type | Description | Condition |
+| --- | --- | --- | --- |
+| questionId | int | 질문의 id | |
+| commentId | int | 댓글의 id | |
+
 ### 예시
 
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "questionId": 1,
-    "commentId": 1
+    // 없음
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
     "password": "1234aaaa"
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    "questionId": 1,
+    "commentId": 1
 }
 ```
 
@@ -80,6 +87,19 @@ STATUS CODE: 204 CREATED
 
 ### 실패
 
+#### 잘못된 비밀번호로 삭제를 시도했을 때
+<!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
+
+```json
+// 응답시 HTTP Status Code는 아래와 같습니다.
+STATUS CODE: 403 FORBIDDEN
+
+// 아래는 응답시 전달될 데이터 예시입니다.
+{
+    "message": "Password is incorrect"
+}
+```
+
 #### questionId에 해당하는 질문이 존재하지 않을 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
@@ -89,7 +109,7 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message": "question not found",
+    "message": "Question not found",
 }
 ```
 
@@ -102,7 +122,7 @@ STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message": "comment on question not found",
+    "message": "Comment on question not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->

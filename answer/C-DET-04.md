@@ -9,7 +9,7 @@ URL(endpoint): /v1/answer/{answerId}/adopt
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: PATCH
 
-<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+<!-- 요청 시 기능명세 코드 입니다. 보여지는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-04
 
 ## 요청시 데이터
