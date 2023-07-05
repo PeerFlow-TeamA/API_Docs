@@ -16,10 +16,10 @@
 ├── Question // 질문 관련 API
 │   └── Comment // 질문의 댓글 관련 API 
 ├── Answer // 답변 관련 API
-│   └── Comment // 답변의 댓글 관련 API
+    └── Comment // 답변의 댓글 관련 API
 ```
 
-## API Docs
+## API Docs 목록
 
 아래는 기능명세 코드별 API 문서입니다.
 기능명세 코드에 해당되는 API를 찾는 경우 이 표를 기준으로 찾아가시면 됩니다.
@@ -49,9 +49,11 @@
 | C-DET-10 | [./answer/comment/C-DET-10.md](./answer/comment/C-DET-10.md) | 답글의 댓글 수정하기 |
 | C-DET-11 | [./answer/comment/C-DET-11.md](./answer/comment/C-DET-11.md) | 답글의 댓글 삭제하기 |
 | C-DET-12 | [./answer/comment/C-DET-12.md](./answer/comment/C-DET-12.md) | 특정 답글에 쓰여진 모든 댓글 조회하기 |
+| C-DET-13 | [./question/C-DET-13.md](./question/C-DET-13.md) | 질문 추천하기 |
+| C-DET-14 | [./answer/C-DET-14.md](./answer/C-DET-14.md) | 답글 추천하기 |
 
 
-## API Docs 작성 방법
+## API Docs 내역
 각 문서에는 다음의 정보가 있습니다.
 
 - URL(endpoint)
@@ -67,3 +69,21 @@
         - 데이터 예시
     - 실패
         - 데이터 예시
+
+## API Docs 작성 규칙
+
+- 문서는 [Markdown](https://gist.github.com/ihoneymon/652be052a0727ad59601)으로 작성합니다.
+
+- 문서의 파일명은 기능명세 코드로 합니다.
+
+- 문서의 제목은 {기능명세 코드}.md 로 합니다.
+
+- API의 endpoint에 따라 디렉토리를 분류합니다.
+
+- ./static/images 디렉토리에 이미지를 넣고 문서에 이미지를 삽입할 때는 다음과 같이 작성합니다.
+
+    ```markdown
+    ![이미지 설명](./static/images/이미지파일명.png)
+    ```
+
+- ./static/docs/api_docs_template.md 파일을 복사하여 문서를 작성합니다.
