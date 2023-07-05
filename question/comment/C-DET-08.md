@@ -73,7 +73,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 ### 성공
 
-#### 응답시 조회된 댓글이 있는 경우
+#### questionId에 해당하는 질문에 댓글이 존재할 경우
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
@@ -123,7 +123,7 @@ STATUS CODE: 200 OK
 ```
 
 
-#### 응답시 조회된 댓글이 없는 경우
+#### questionId에 해당하는 질문에 댓글이 존재하지 않을 경우
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.

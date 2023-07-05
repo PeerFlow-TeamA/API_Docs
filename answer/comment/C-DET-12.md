@@ -73,7 +73,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 ### 성공
 
-#### answerId에 해당하는 답글이 존재할 때
+#### answerId에 해당하는 답글에 댓글이 존재할 경우
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
@@ -123,7 +123,7 @@ STATUS CODE: 200 OK
 ```
 
 
-#### answerId에 해당하는 답글이 존재하지 않을 때
+#### answerId에 해당하는 답글에 댓글이 존재하지 않을 경우
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
