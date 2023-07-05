@@ -18,7 +18,7 @@ method: POST
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
 Path Parameter : <input type="checkbox" value="Path Parameter">
 
-Request Parameter : <input type="checkbox" value="Request Parameter" checked>
+Request Body : <input type="checkbox" value="Request Parameter" checked>
 
 ### Request Body 
 

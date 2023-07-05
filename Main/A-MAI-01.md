@@ -18,7 +18,7 @@ method: GET
 <!-- 만약 해당되는 데이터가 없다면 제목을 포함한 항목을 지워주세요.-->
 Path Parameter : <input type="checkbox" value="Path Parameter" checked>
 
-Request Parameter : <input type="checkbox" value="Request Parameter">
+Request Body : <input type="checkbox" value="Request Parameter">
 
 ### Request Parameter
 
