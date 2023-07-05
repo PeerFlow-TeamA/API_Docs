@@ -160,17 +160,17 @@ STATUS CODE: 200 OK
 
 ### 실패
 
-#### 필요한 데이터가 없거나 틀린 경우
+#### Sort에서 잘못된 값이 들어올 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 
+STATUS CODE: 400 Bad Request
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    // ... 응답시 전송될 데이터
+    "message" : "sort standard incorrected - sort standard must be one of [lastest, views, recommends]"
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->

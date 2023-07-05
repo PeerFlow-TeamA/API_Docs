@@ -158,6 +158,6 @@ STATUS CODE: 400 BAD REQUEST
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "category not correct - must be ft_irc, minishell, minirt"
+    "message" : "category not correct - category must be one of [ft_irc, minishell, minirt]"
 }
 ```
