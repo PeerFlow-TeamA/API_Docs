@@ -12,7 +12,7 @@
 ├── README.md
 ├── static // 문서에 필요한 정적파일이 들어있는 디렉토리
 │   └── images // 이미지 파일
-├── Main // 메인페이지
+├── Main // 메인페이지 관련 API
 ├── Question // 질문 관련 API
 │   └── Comment // 질문의 댓글 관련 API 
 ├── Answer // 답변 관련 API
@@ -49,9 +49,6 @@
 | C-DET-10 | [./answer/comment/C-DET-10.md](./answer/comment/C-DET-10.md) | 답글의 댓글 수정하기 |
 | C-DET-11 | [./answer/comment/C-DET-11.md](./answer/comment/C-DET-11.md) | 답글의 댓글 삭제하기 |
 | C-DET-12 | [./answer/comment/C-DET-12.md](./answer/comment/C-DET-12.md) | 특정 답글에 쓰여진 모든 댓글 조회하기 |
-
-
-
 
 
 ## API Docs 작성 방법
