@@ -20,6 +20,8 @@ Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body">
 
+Query Parameter : <input type="checkbox" value="Query Parameter">
+
 ### Path Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
@@ -33,6 +35,18 @@ Request Body : <input type="checkbox" value="Request Body">
 | | | | |
 
 ### Request Body 
+
+<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
+<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
+<!-- Key는 요청 시 데이터의 Key를,
+    Data-Type은 요청 시 데이터의 Data-Type을,
+    Description은 요청 시 데이터의 설명을,
+    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
+| Key | Data-Type | Description | Condition |
+| --- | --- | --- | --- |
+| | | | |
+
+### Query Parameter 
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->

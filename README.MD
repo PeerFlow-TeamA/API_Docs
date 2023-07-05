@@ -31,12 +31,20 @@
 
 | 기능명세 코드 | API 문서 위치 | 문서 설명 |
 | --- | --- | --- |
-| A-MAI-00 | ./Main/A-MAI-00.md | 게시판 메인페이지의 질문 목록 조회 |
-| A-MAI-01 | ./Main/A-MAI-01.md | 게시판 질문 검색 |
-| B-WRI-00 | ./Question/B-WRI-00.md | 질문 게시글 작성하기 |
-| B-WRI-01 | ./Question/B-WRI-01.md | 질문 게시글 수정하기 |
-| B-WRI-02 | ./Question/B-WRI-02.md | 질문 게시글 삭제하기 |
-| C-DET-00 | ./Question/C-DET-00.md | 질문 게시글 상세 조회 |
+| A-MAI-00 | ./main/A-MAI-00.md | 게시판 메인페이지의 질문 목록 조회 |
+| A-MAI-01 | ./main/A-MAI-01.md | 게시판 질문 검색 |
+| B-WRI-00 | ./question/B-WRI-00.md | 질문 게시글 작성하기 |
+| B-WRI-01 | ./question/B-WRI-01.md | 질문 게시글 수정하기 |
+| B-WRI-02 | ./question/B-WRI-02.md | 질문 게시글 삭제하기 |
+| C-DET-00 | ./question/C-DET-00.md | 질문 게시글 상세 조회 |
+| C-DET-01 | ./answer/C-DET-01.md | 답글 작성하기 |
+| C-DET-02 | ./answer/C-DET-02.md | 답글 수정하기 |
+| C-DET-03 | ./answer/C-DET-03.md | 답글 삭제하기 |
+| C-DET-04 | ./answer/C-DET-04.md | 답글 채택하기 |
+| C-DET-05 | ./question/comment/C-DET-05.md | 질문 댓글 작성하기 |
+| C-DET-06 | ./question/comment/C-DET-06.md | 질문 댓글 수정하기 |
+| C-DET-07 | ./question/comment/C-DET-07.md | 질문 댓글 삭제하기 |
+| C-DET-08 | ./question/comment/C-DET-08.md | 특정 질문 글에 쓰여진 모든 댓글 조회하기 |
 
 
 
@@ -49,7 +57,9 @@
 - 기능명세 코드
 
 - 요청시 데이터
-    - 데이터 예시
+    - Path Parameter, Body Parameter, Query Parameter 활용 여부
+    - 활용 데이터 내역
+    - 활용 데이터 예시
 - 응답시 데이터
     - 성공
         - 데이터 예시
