@@ -7,9 +7,10 @@
 URL(endpoint): 
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
-method: GET
+method: 
 
-기능명세 코드: A-MAI-00
+<!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
+기능명세 코드:
 
 ## 요청시 데이터
 
@@ -48,9 +49,14 @@ Request Parameter : <input type="checkbox" value="Request Parameter">
 <img width="50%" src="../static/images/Main.png">
 
 ```json
-// 아래는 요청할 때의 데이터 예시입니다.
+// 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    // ... 요청할 때의 데이터
+    // ...
+}
+
+// 아래는 요청할 때의 Request Body 데이터 예시입니다.
+{
+    // 없음
 }
 ```
 
@@ -64,7 +70,7 @@ Request Parameter : <input type="checkbox" value="Request Parameter">
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path parameter에 따라 응답 데이터가 달라집니다.
+// 요청시 Path Parameter와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 
@@ -81,9 +87,6 @@ STATUS CODE:
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
-// 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path parameter에 따라 응답 데이터가 달라집니다.
-
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 
 
