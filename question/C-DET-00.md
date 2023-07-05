@@ -36,8 +36,6 @@ Request Body : <input type="checkbox" value="Request Body">
 
 ### 예시
 
-<img width="50%" src="../static/images/Main.png">
-
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
