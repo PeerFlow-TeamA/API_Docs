@@ -2,7 +2,7 @@
 
 ## 공통 정보
 
-URL(endpoint): /v1?category=&sort=&pageIndex=&pageSize=
+URL(endpoint): /v1?category={category}&sort={sort}&pageIndex={pagingIndex}&pageSize={pageSize}
 
 method: GET
 
@@ -14,6 +14,8 @@ Path Parameter : <input type="checkbox" value="Path Parameter" checked>
 
 Request Body : <input type="checkbox" value="Request Body">
 
+Query Parameter : <input type="checkbox" value="Query Parameter">
+
 ### Path Parameter
 
 | Key | Data-Type | Description | Condition |
@@ -23,11 +25,8 @@ Request Body : <input type="checkbox" value="Request Body">
 | pagingIndex | int | 페이지의 사이즈 |
 | pagingSize | int | 페이지의 인덱스 | 
 
-### Request Body 
 
-### 예시
-
-- Path Parameter 내역
+#### 예시
 
 <img width="50%" src="../static/images/A-MAI-00-00.png">
 
@@ -38,6 +37,16 @@ Request Body : <input type="checkbox" value="Request Body">
     "sort" : "views",
     "pagingIndex" : 0,
     "pagingSize" : 10
+}
+
+// 아래는 요청할 때의 Request Body 데이터 예시입니다.
+{
+    // 없음
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    // 없음
 }
 ```
 

@@ -4,7 +4,7 @@
 
 
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
-URL(endpoint): /v1/search?title=&sort=
+URL(endpoint): /v1/search?title={title}&sort={sort}
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: GET
@@ -19,6 +19,8 @@ method: GET
 Path Parameter : <input type="checkbox" value="Path Parameter" checked>
 
 Request Body : <input type="checkbox" value="Request Body">
+
+Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ### Path Parameter
 
@@ -48,6 +50,11 @@ Request Body : <input type="checkbox" value="Request Body">
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
+{
+    // 없음
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
     // 없음
 }
