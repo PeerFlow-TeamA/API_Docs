@@ -18,19 +18,7 @@ method: POST
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
 Path Parameter : <input type="checkbox" value="Path Parameter">
 
-Request Body : <input type="checkbox" value="Request Body">
-
-### Request Parameter
-
-<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
-<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
-<!-- Key는 요청 시 데이터의 Key를,
-    Data-Type은 요청 시 데이터의 Data-Type을,
-    Description은 요청 시 데이터의 설명을,
-    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
-| Key | Data-Type | Description | Condition |
-| --- | --- | --- | --- |
-| | | | |
+Request Body : <input type="checkbox" value="Request Body" checked>
 
 ### Request Body 
 
@@ -42,21 +30,29 @@ Request Body : <input type="checkbox" value="Request Body">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| | | | |
+| questionId | int | 답글을 작성할 질문의 id | |
+| nickname | string | 답글 작성자의 닉네임 | |
+| password | string | 답글 작성자임을 판별할 수 있는 password | |
+| content | string | 답글의 내용 | |
+| createdAt | string | 답글 작성 시간 | 답글을 작성하여 작성하기 버튼을 누른 시점을 기준으로 할 것 |
+
 
 ### 예시
-
-<img width="50%" src="../static/images/Main.png">
 
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    // ...
+    // 없음
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-    // 없음
+  "type": "answer",
+  "questionId": 1,
+  "nickname": "hyeongki",
+  "password": "1234"
+  "content": "minishell 이렇게 하시면 됩니다."
+  "createdAt": "2023-07-01T12:12:12"
 }
 ```
 
@@ -71,26 +67,26 @@ Request Body : <input type="checkbox" value="Request Body">
 // 요청시 Path Parameter와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 
+STATUS CODE: 201 Created
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    // ... 응답시 전송될 데이터
+    "message": "answer created successfully",
 }
 ```
 
 ### 실패
 
-#### [실패 사유]
+#### questionId에 해당하는 질문이 존재하지 않을 때
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 
+STATUS CODE: 404 Not Found
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    // ... 응답시 전송될 데이터
+    "message": "question not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->
