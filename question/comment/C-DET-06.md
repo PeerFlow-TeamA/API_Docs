@@ -30,7 +30,8 @@ Request Body : <input type="checkbox" value="Request Body" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| | | | |
+| questionId | int | 질문의 id | |
+| commentId | int | 댓글의 id | |
 
 ### Request Body 
 
@@ -42,21 +43,26 @@ Request Body : <input type="checkbox" value="Request Body" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| | | | |
+| nickname | string | 댓글 작성자의 닉네임 | |
+| password | string | 댓글 작성자가 본인 확인을 위해 입력한 비밀번호 | |
+| content | string | 댓글의 내용 | |
+
 
 ### 예시
-
-<img width="50%" src="../static/images/Main.png">
 
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    // ...
+    "questionId": 1,
+    "commentId": 1
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
+
 {
-    // 없음
+	"nickname": "hyeongki",
+	"password": "3333"
+	"content": "정말 좋은 질문입니다."
 }
 ```
 
@@ -71,26 +77,39 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 // 요청시 Path Parameter와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 
+STATUS CODE: 201 CREATED
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    // ... 응답시 전송될 데이터
+    "message": "comment on question modified successfully",
 }
 ```
 
 ### 실패
 
-#### [실패 사유]
+#### questionId에 해당하는 질문이 존재하지 않을 경우
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 
+STATUS CODE: 404 NOT FOUND
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    // ... 응답시 전송될 데이터
+    "message": "question not found",
+}
+```
+
+#### commentId에 해당하는 질문의 댓글이 존재하지 않을 경우
+<!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
+
+```json
+// 응답시 HTTP Status Code는 아래와 같습니다.
+STATUS CODE: 404 NOT FOUND
+
+// 아래는 응답시 전달될 데이터 예시입니다.
+{
+    "message": "comment on question not found",
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->
