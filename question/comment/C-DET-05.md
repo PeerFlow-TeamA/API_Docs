@@ -56,12 +56,11 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    // 없음
+	"questionId": 1
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-	"questionId": 1,
 	"nickname": "hyeongki",
 	"password": "3333aaaa",
 	"content": "정말 좋은 질문입니다."
