@@ -27,6 +27,13 @@
 | 기능명세 코드 | API 문서 위치 | 문서 설명 |
 | --- | --- | --- |
 | A-MAI-00 | Main/A-MAI-00.md | 게시판 메인페이지의 질문 목록 조회 |
+| A-MAI-01 | Main/A-MAI-01.md | 게시판 질문 검색 |
+| B-WRI-00 | Question/B-WRI-00.md | 질문 게시글 작성하기 |
+| B-WRI-01 | Question/B-WRI-01.md | 질문 게시글 수정하기 |
+| B-WRI-02 | Question/B-WRI-02.md | 질문 게시글 삭제하기 |
+| C-DET-00 | Question/C-DET-00.md | 질문 게시글 상세 조회 |
+
+
 
 
 ## API Docs 작성 방법
