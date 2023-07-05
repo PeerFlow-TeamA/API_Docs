@@ -34,10 +34,10 @@ Request Body : <input type="checkbox" value="Request Body">
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "category" : "minishell"
-    "sort" : "views"
-    "pagingIndex" : 0
-    "pagingSize" : 10 
+    "category" : "minishell",
+    "sort" : "views",
+    "pagingIndex" : 0,
+    "pagingSize" : 10
 }
 ```
 
