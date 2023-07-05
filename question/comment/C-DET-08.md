@@ -4,7 +4,7 @@
 
 
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
-URL(endpoint): /v1/questions/{questionId}/comments?page={page}&size={size}
+URL(endpoint): /v1/question/{questionId}/comments?page={page}&size={size}
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
 method: GET
