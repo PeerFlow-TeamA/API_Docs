@@ -31,7 +31,7 @@ Request Body : <input type="checkbox" value="Request Body">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| questionId | string | 질문의 id | |
+| questionId | int | 질문의 id | |
 
 
 ### 예시
