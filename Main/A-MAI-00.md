@@ -10,6 +10,8 @@ method: GET
 
 ### Request Parameter
 
+필요여부 - [X]
+
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
 | category | string | 글의 카테고리 | ft_irc, minishell, minirt 셋 중 하나로 할 것 |
@@ -19,10 +21,7 @@ method: GET
 
 ### Request Body
 
-<!-- 필요여부에 대해 체크박스로 표시, 이 경우는 필요없음이니 체크박스에 체크 안된 것을 넣음 -->
-
-필요여부: [ ]
-
+필요여부 - [ ]
 
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
