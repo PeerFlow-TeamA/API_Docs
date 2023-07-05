@@ -24,6 +24,11 @@
 아래는 기능명세 코드별 API 문서입니다.
 기능명세 코드에 해당되는 API를 찾는 경우 이 표를 기준으로 찾아가시면 됩니다.
 
+파일의 경로는 요청하는 API의 endpoint를 따라 분류되어 있습니다.
+
+만약 요청하는 API의 endpoint가 `/v1/question`이라면 `question` 디렉토리에서 찾으시면 됩니다.
+또, 만약 요청하는 API의 endpoint가 `/v1/question/comment`라면 `question` 디렉토리에서 `comment` 디렉토리를 찾으시면 됩니다.
+
 | 기능명세 코드 | API 문서 위치 | 문서 설명 |
 | --- | --- | --- |
 | A-MAI-00 | ./Main/A-MAI-00.md | 게시판 메인페이지의 질문 목록 조회 |
