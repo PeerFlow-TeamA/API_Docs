@@ -14,7 +14,7 @@ Path Parameter : <input type="checkbox" value="Path Parameter" checked>
 
 Request Body : <input type="checkbox" value="Request Body">
 
-### Request Parameter
+### Path Parameter
 
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |

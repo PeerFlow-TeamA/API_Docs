@@ -1,16 +1,16 @@
-# 질문 댓글 작성하기
+# 질문 댓글 수정하기
 
 ## 공통 정보
 
 
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
-URL(endpoint): /v1/question/{questionId}/comment
+URL(endpoint): /v1/question/{questionId}/comment/{commentId}
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
-method: POST
+method: PUT
 
 <!-- 요청 시 기능명세 코드 입니다. HTTP method를 기준으로 합니다. -->
-기능명세 코드: C-DET-05
+기능명세 코드: C-DET-06
 
 ## 요청시 데이터
 
@@ -30,8 +30,7 @@ Request Body : <input type="checkbox" value="Request Body" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| questionId | int | 댓글을 작성할 질문의 id | |
-
+| | | | |
 
 ### Request Body 
 
@@ -43,26 +42,21 @@ Request Body : <input type="checkbox" value="Request Body" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| nickname | string | 댓글 작성자의 닉네임 | |
-| password | string | 댓글 작성자임을 판별할 수 있는 password | |
-| content | string | 댓글의 내용 | |
-| createdAt | string | 댓글 작성 시간 | 댓글을 작성하여 작성하기 버튼을 누른 시점을 기준으로 할 것 |
-
+| | | | |
 
 ### 예시
+
+<img width="50%" src="../static/images/Main.png">
 
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-	"questionId": 1
+    // ...
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-	"nickname": "hyeongki",
-	"password": "3333aaaa",
-	"content": "정말 좋은 질문입니다."
-	"createdAt": "2023-07-02T02:02:02"
+    // 없음
 }
 ```
 
@@ -77,26 +71,26 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 // 요청시 Path Parameter와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 201 CREATED
+STATUS CODE: 
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "comment on question created successfully",
+    // ... 응답시 전송될 데이터
 }
 ```
 
 ### 실패
 
-#### questionId에 해당하는 질문이 존재하지 않을 때
+#### [실패 사유]
 <!-- 실패시에는 어떻게 해서 실패한 코드인지 반드시 실패 사유를 적어주세요. -->
 
 ```json
 // 응답시 HTTP Status Code는 아래와 같습니다.
-STATUS CODE: 404 NOT FOUND
+STATUS CODE: 
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "question not found",
+    // ... 응답시 전송될 데이터
 }
 ```
 <!-- 실패 사유가 여러가지 존재하여서 2개 이상의 실패 응답을 정의할 때에는 복수의 ### [실패사유] 탭을 만들어 주세요.-->

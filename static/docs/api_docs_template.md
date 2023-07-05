@@ -20,7 +20,7 @@ Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body">
 
-### Request Parameter
+### Path Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
