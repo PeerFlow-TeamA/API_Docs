@@ -2,13 +2,11 @@
 
 ## 요청시 데이터
 
-URL(endpoint): /v1?category=&sort=&pageIndex=&pageSize=
+URL(endpoint): 
 
-method: GET
+method: 
 
-기능명세 코드: A-MAI-00
-
-### Request Parameter
+기능명세 코드: 
 
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
@@ -17,18 +15,8 @@ method: GET
 | pagingIndex | int | 페이지의 사이즈 |
 | pagingSize | int | 페이지의 인덱스 | 
 
-### Request Body
 
-<!-- 필요여부에 대해 체크박스로 표시, 이 경우는 필요없음이니 체크박스에 체크 안된 것을 넣음 -->
-
-필요여부: [ ]
-
-
-| Key | Data-Type | Description | Condition |
-| --- | --- | --- | --- |
-| | | | |
-
-### 예시
+### - 예시
 
 <img width="50%" src="../static/images/Main.png">
 
