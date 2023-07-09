@@ -20,7 +20,7 @@ Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body" checked>
 
-Query Parameter : <input type="checkbox" value="Query Parameter" checked
+Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 ### Request Body 
 
