@@ -16,11 +16,23 @@ method: PUT
 
 <!-- 요청시에 Path Variable, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
-Path Variable : <input type="checkbox" value="Path Parameter" checked>
+Path Variable : <input type="checkbox" value="Path Variable" checked>
 
 Request Body : <input type="checkbox" value="Request Body" checked>
 
 Query Parameter : <input type="checkbox" value="Query Parameter">
+
+### Path Variable
+
+<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
+<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
+<!-- Key는 요청 시 데이터의 Key를,
+    Data-Type은 요청 시 데이터의 Data-Type을,
+    Description은 요청 시 데이터의 설명을,
+    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
+| Key | Data-Type | Description | Condition |
+| --- | --- | --- | --- |
+| questionId | int | 질문의 id | |
 
 ### Request Body 
 
@@ -38,18 +50,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | category | string | 질문의 카테고리 | |
 | content | string | 질문의 내용 | |
 | createdAt | string | 질문이 수정된 시간 | 질문 수정이 작성되어 수정버튼을 누른 시점을 기준으로 할 것 |
-
-### Path Variable
-
-<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
-<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
-<!-- Key는 요청 시 데이터의 Key를,
-    Data-Type은 요청 시 데이터의 Data-Type을,
-    Description은 요청 시 데이터의 설명을,
-    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
-| Key | Data-Type | Description | Condition |
-| --- | --- | --- | --- |
-| questionId | int | 질문의 id | |
 
 ### 예시
 
@@ -84,7 +84,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path Parameter와 Request Body에 따라 응답 데이터가 달라집니다.
+// 요청시 Path Variable와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 201 Created

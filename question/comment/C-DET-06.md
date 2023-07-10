@@ -22,6 +22,19 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 
 Query Parameter : <input type="checkbox" value="Query Parameter">
 
+### Path Variable
+
+<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
+<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
+<!-- Key는 요청 시 데이터의 Key를,
+    Data-Type은 요청 시 데이터의 Data-Type을,
+    Description은 요청 시 데이터의 설명을,
+    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
+| Key | Data-Type | Description | Condition |
+| --- | --- | --- | --- |
+| questionId | int | 질문의 id | |
+| commentId | int | 댓글의 id | |
+
 ### Request Body 
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
@@ -36,19 +49,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | password | string | 댓글 작성자가 본인 확인을 위해 입력한 비밀번호 | |
 | content | string | 댓글의 내용 | |
 | created_at | string | 댓글이 업데이트 된 시점| |
-
-### Path Variable
-
-<!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
-<!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
-<!-- Key는 요청 시 데이터의 Key를,
-    Data-Type은 요청 시 데이터의 Data-Type을,
-    Description은 요청 시 데이터의 설명을,
-    Condition은 요청 시 데이터의 조건을 명시해주세요. -->
-| Key | Data-Type | Description | Condition |
-| --- | --- | --- | --- |
-| questionId | int | 질문의 id | |
-| commentId | int | 댓글의 id | |
 
 
 ### 예시
