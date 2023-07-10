@@ -20,6 +20,8 @@ Path Variable : <input type="checkbox" value="Path Variable" checked>
 
 Request Body : <input type="checkbox" value="Request Body" checked>
 
+Query Parameter : <input type="checkbox" value="Query Parameter">
+
 ### Path Variable
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
@@ -55,6 +57,11 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
     "password": "1234aaaa"
+}
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    // 없음
 }
 ```
 

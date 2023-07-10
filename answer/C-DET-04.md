@@ -14,11 +14,13 @@ method: PATCH
 
 ## 요청시 데이터
 
-<!-- 요청시에 Path Variable 혹은 Request Parameter가 필요한 지에 대해 체크합니다. -->
-<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 안됩니다.-->
+<!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
+<!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
 Path Variable : <input type="checkbox" value="Path Variable" checked>
 
 Request Body : <input type="checkbox" value="Request Body" checked>
+
+Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ### Path Variable
 
@@ -56,6 +58,11 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 {
     "password": "1234aaaa"
 }
+
+// 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
+{
+    // 없음
+}
 ```
 
 ***
@@ -66,7 +73,6 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path Variable와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 200 OK
