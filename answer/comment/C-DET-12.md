@@ -77,7 +77,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path Variable와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 200 OK
@@ -127,7 +126,7 @@ STATUS CODE: 200 OK
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path Variable와 Request Body에 따라 응답 데이터가 달라집니다.
+
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 200 OK
