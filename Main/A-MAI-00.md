@@ -15,13 +15,13 @@ method: GET
 
 <!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
-Path Parameter : <input type="checkbox" value="Path Parameter" checked>
+Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body">
 
-Query Parameter : <input type="checkbox" value="Query Parameter">
+Query Parameter : <input type="checkbox" value="Query Parameter" check>
 
-### Path Parameter
+### Query Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -44,10 +44,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "category" : "minishell",
-    "sort" : "views",
-    "page" : 0,
-    "size" : 10
+    // 없음
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
@@ -57,7 +54,10 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
-    // 없음
+    "category" : "minishell",
+    "sort" : "views",
+    "page" : 0,
+    "size" : 10
 }
 ```
 
@@ -77,6 +77,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 STATUS CODE: 200 OK
 
 {
+    // 아래는 게시글의 정보를 담은 데이터입니다.
     "content": [
         {
             "questionId": 1,
@@ -90,31 +91,34 @@ STATUS CODE: 200 OK
             "content": "응 안해"
         }
     ],
+    // 아래는 페이징 처리를 위한 데이터입니다.
     "pageable": {
+        // 아래는 페이지의 정렬 기준을 나타냅니다.
         "sort": {
-            "empty": true,
-            "sorted": false,
-            "unsorted": true
+            "empty": true, // 정렬할 데이터가 없는지 나타냅니다.
+            "sorted": false, // 정렬이 되었는지 나타냅니다.
+            "unsorted": true // 정렬이 되지 않았는지 나타냅니다.
         },
-        "offset": 0,
-        "pageNumber": 0,
-        "pageSize": 10,
-        "paged": true,
-        "unpaged": false
+        "offset": 0, // 페이지의 시작 인덱스를 나타냅니다.
+        "pageNumber": 0, // 페이지의 인덱스를 나타냅니다.
+        "pageSize": 10, // 페이지의 사이즈를 나타냅니다.
+        "paged": true, // 페이징 처리가 되었는지 나타냅니다.
+        "unpaged": false // 페이징 처리가 되지 않았는지 나타냅니다.
     },
-    "last": true,
-    "totalElements": 1,
-    "totalPages": 1,
-    "size": 10,
-    "number": 0,
+    "last": true, // 마지막 페이지인지 나타냅니다.
+    "totalElements": 1, // 전체 게시글의 개수를 나타냅니다.
+    "totalPages": 1, // 전체 페이지의 개수를 나타냅니다.
+    "size": 10, // 페이지의 사이즈를 나타냅니다.
+    "number": 0, // 페이지의 인덱스를 나타냅니다.
+    // 아래는 페이지의 정렬 기준을 나타냅니다.
     "sort": {
         "empty": true,
         "sorted": false,
         "unsorted": true
     },
-    "first": true,
-    "numberOfElements": 1,
-    "empty": false
+    "first": true, // 첫번째 페이지인지 나타냅니다.
+    "numberOfElements": 1, // 현재 페이지의 게시글 개수를 나타냅니다.
+    "empty": false // 페이지가 비어있는지 나타냅니다.
 }
 ```
 

@@ -16,13 +16,13 @@ method: GET
 
 <!-- 요청시에 Path Parameter, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
-Path Parameter : <input type="checkbox" value="Path Parameter" checked>
+Path Parameter : <input type="checkbox" value="Path Parameter">
 
 Request Body : <input type="checkbox" value="Request Body">
 
-Query Parameter : <input type="checkbox" value="Query Parameter">
+Query Parameter : <input type="checkbox" value="Query Parameter" checked
 
-### Path Parameter
+### Query Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -45,8 +45,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 ```json
 // 아래는 요청할 때의 Path Parameter 데이터 예시입니다.
 {
-    "title" : "미니쉘",
-    "sort" : "views"
+    // 없음
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
@@ -56,7 +55,8 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
-    // 없음
+    "title" : "미니쉘",
+    "sort" : "views"
 }
 ```
 
