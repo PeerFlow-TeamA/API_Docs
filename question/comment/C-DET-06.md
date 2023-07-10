@@ -16,11 +16,11 @@ method: PUT
 
 <!-- 요청시에 Path Variable, Request Parameter, 혹은 Query Parameter가 필요한 지에 대해 체크합니다. -->
 <!-- 만약 해당되는 데이터가 없다면 표를 비워주세요. 제목을 포함한 항목을 지우시면 됩니다.-->
-Path Variable : <input type="checkbox" value="Path Variable">
+Path Variable : <input type="checkbox" value="Path Variable" checked>
 
 Request Body : <input type="checkbox" value="Request Body" checked>
 
-Query Parameter : <input type="checkbox" value="Query Parameter" checked>
+Query Parameter : <input type="checkbox" value="Query Parameter">
 
 ### Request Body 
 
@@ -37,7 +37,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 | content | string | 댓글의 내용 | |
 | created_at | string | 댓글이 업데이트 된 시점| |
 
-### Query Parameter
+### Path Variable
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -56,7 +56,8 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 ```json
 // 아래는 요청할 때의 Path Variable 데이터 예시입니다.
 {
-    // 없음
+    "questionId": 1,
+    "commentId": 1
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
@@ -70,8 +71,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
-    "questionId": 1,
-    "commentId": 1
+    // 없음
 }
 ```
 

@@ -32,10 +32,9 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| page | int | 페이지 번호 | |
-| size | int | 페이지 사이즈 | |
+| questionId | int | 질문의 id | |
 
-### Path Variable
+### Query Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -45,15 +44,16 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| questionId | int | 질문의 id | |
+| page | int | 페이지 번호 | |
+| size | int | 페이지 사이즈 | |
+
 
 ### 예시
 
 ```json
 // 아래는 요청할 때의 Path Variable 데이터 예시입니다.
 {
-    "page": 0,
-    "size": 10
+    "questionId": 1
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
@@ -63,7 +63,9 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
-    "questionId": 1
+
+    "page": 0,
+    "size": 10
 }
 ```
 

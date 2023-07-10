@@ -41,7 +41,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 ```json
 // 아래는 요청할 때의 Path Variable 데이터 예시입니다.
 {
-    // 없음
+    "questionId": 1
 }
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
@@ -51,7 +51,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
 {
-    "questionId": 1
+    // 없음
 }
 ```
 
