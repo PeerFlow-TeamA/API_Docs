@@ -31,11 +31,10 @@ Query Parameter : <input type="checkbox" value="Query Parameter" check>
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| category | string | 글의 카테고리 | ft_irc, minishell, minirt 셋 중 하나로 할 것 |
+| category | string | 글의 카테고리 | all, ft_irc, minishell, minirt 넷 중 하나로 할 것 |
 | sort | string | 정렬 기준 | lastest, views, recommends 셋 중 하나 |
 | page | int | 페이지의 사이즈 |
-| size | int | 페이지의 인덱스 | 
-
+| size | int | 페이지의 인덱스 |
 
 #### 예시
 

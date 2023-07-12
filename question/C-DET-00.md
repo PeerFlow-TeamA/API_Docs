@@ -3,7 +3,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/question/{questionId}
 
@@ -34,7 +33,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
 | questionId | int | 질문의 id | |
-
 
 ### 예시
 

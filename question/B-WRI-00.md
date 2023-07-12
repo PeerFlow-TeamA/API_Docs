@@ -21,7 +21,7 @@ Request Body : <input type="checkbox" value="Request Body" checked>
 
 Query Parameter : <input type="checkbox" value="Query Parameter">
 
-### Request Body 
+### Request Body
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -34,7 +34,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | title | string | 질문의 제목 | |
 | nickname | string | 작성자의 nickname | |
 | password | string | 작성자임을 판별할 수 있는 password | |
-| category | string | 질문의 카테고리 | |
+| category | string | 질문의 카테고리 | all, ft_irc, minishell, minirt 넷 중 하나로 할 것 |
 | content | string | 질문의 내용 | |
 | createdAt | string | 질문이 작성된 시간 | 질문이 작성되어 작성 버튼을 누른 시점을 기준으로 할 것 |
 
@@ -48,12 +48,12 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-	"title": "미니쉘 우웩",
-	"nickname": "san", 
-	"password": "1111aaaa", 
-	"category": "minishell",
-	"content": "미니쉘 어떻게 시작해야하나요?",
-	"createdAt": "2023-06-29T15:02:59"
+ "title": "미니쉘 우웩",
+ "nickname": "san", 
+ "password": "1111aaaa", 
+ "category": "minishell",
+ "content": "미니쉘 어떻게 시작해야하나요?",
+ "createdAt": "2023-06-29T15:02:59"
 }
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.

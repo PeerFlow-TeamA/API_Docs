@@ -2,7 +2,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/search?title={title}&sort={sort}
 
@@ -34,7 +33,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 | --- | --- | --- | --- |
 | title | string | 검색할 제목, Content의 title에 해당하는 데이터 | |
 | sort | string | 정렬 기준 | lastest, views, recommends 셋 중 하나 |
-
 
 ### 예시
 
@@ -121,7 +119,6 @@ STATUS CODE: 200 OK
 
 ```json
 // 아래의 응답에 대한 요청은 위의 요청시 데이터 예시를 참고해주세요.
-// 요청시 Path Variable와 Request Body에 따라 응답 데이터가 달라집니다.
 
 // 응답시 HTTP Status Code는 아래와 같습니다.
 STATUS CODE: 200 OK

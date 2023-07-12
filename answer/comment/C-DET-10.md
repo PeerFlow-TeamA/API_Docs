@@ -2,7 +2,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/answer/{answerId}/comment/{commentId}
 
@@ -35,7 +34,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | answerId | int | 수정할 댓글이 달린 답글의 id | |
 | commentId | int | 수정할 댓글의 id | |
 
-### Request Body 
+### Request Body
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -50,7 +49,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | content | String | 수정할 댓글의 내용 | |
 | createdAt | string | 댓글을 수정한 시간 | 댓글을 수정하여 수정하기 버튼을 누른 시점을 기준으로 할 것 |
 
-
 ### 예시
 
 ```json
@@ -63,8 +61,8 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
     "nickname": "yonghlee",
-	"password": "1212",
-	"content": "좋은 답글 감사합니다용용용."
+ "password": "1212",
+ "content": "좋은 답글 감사합니다용용용."
 }
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.

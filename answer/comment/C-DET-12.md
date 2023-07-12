@@ -2,7 +2,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/answers/{answerId}/comments?page={page}&size={size}
 
@@ -34,7 +33,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 | --- | --- | --- | --- |
 | answerId | int | 댓글을 조회하려고 하는 답글의 ID | |
 
-### Query Parameter 
+### Query Parameter
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -120,7 +119,6 @@ STATUS CODE: 200 OK
     "empty": false
 }
 ```
-
 
 #### answerId에 해당하는 답글에 댓글이 존재하지 않을 경우
 
