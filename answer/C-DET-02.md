@@ -44,7 +44,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| questionId | int | 답글을 작성할 질문의 id | |
 | nickname | string | 답글 작성자의 닉네임 | |
 | password | string | 답글 작성자임을 판별할 수 있는 password | |
 | content | string | 답글의 내용 | |
@@ -62,7 +61,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-  "questionId": 1,
   "nickname": "hyeongki",
   "password": "1234",
   "content": "minishell 이렇게 하시면 될 것 같아요.",
@@ -89,11 +87,7 @@ STATUS CODE: 201 CREATED
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-  "questionId": 1,
-  "nickname": "hyeongki",
-  "password": "1234"
-  "content": "minishell 이렇게 하시면 될 것 같아요.",
-  "createdAt": "2023-07-01T12:12:12"
+    "message" : "Answer modified successfully"
 }
 ```
 
