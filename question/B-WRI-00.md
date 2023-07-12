@@ -76,7 +76,7 @@ STATUS CODE: 201 CREATED
 
 // 아래는 응답시 전달될 데이터 예시입니다.
 {
-    "message" : "question created successfully",
+    "message" : "Question created successfully",
 }
 ```
 
