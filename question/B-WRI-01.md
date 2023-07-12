@@ -46,7 +46,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | title | string | 질문의 제목 | |
 | nickname | string | 작성자의 nickname | |
 | password | string | 작성자임을 판별할 수 있는 password | |
-| category | string | 질문의 카테고리 | all, ft_irc, minishell, minirt 넷 중 하나로 할 것 |
+| category | string | 질문의 카테고리 | 질문 수정시에는 ft_irc, minishell, minirt 셋 중 하나로 할 것 |
 | content | string | 질문의 내용 | |
 | createdAt | string | 질문이 수정된 시간 | 질문 수정이 작성되어 수정버튼을 누른 시점을 기준으로 할 것 |
 
