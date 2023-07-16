@@ -38,8 +38,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter" check>
 
 #### 예시
 
-<img width="50%" src="../static/images/A-MAI-00-00.png">
-
 ```json
 // 아래는 요청할 때의 Path Variable 데이터 예시입니다.
 {
