@@ -46,7 +46,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | --- | --- | --- | --- |
 | password | String | 댓글을 작성한 사용자가 본인 확인을 위해 입력한 비밀번호 | |
 | content | String | 수정할 댓글의 내용 | |
-| createdAt | string | 댓글을 수정한 시간 | 댓글을 수정하여 수정하기 버튼을 누른 시점을 기준으로 할 것 |
+| updateAt | string | 댓글을 수정한 시간 | 댓글을 수정하여 수정하기 버튼을 누른 시점을 기준으로 할 것 |
 
 ### 예시
 
@@ -59,9 +59,9 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-    "nickname": "yonghlee",
- "password": "1212",
- "content": "좋은 답글 감사합니다용용용."
+    "password": "1212",
+    "content": "좋은 답글 감사합니다용용용.",
+    "updateAt": "2021-08-20T12:00:00"
 }
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.

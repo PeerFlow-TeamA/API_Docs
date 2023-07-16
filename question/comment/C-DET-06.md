@@ -46,7 +46,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | --- | --- | --- | --- |
 | password | string | 댓글 작성자가 본인 확인을 위해 입력한 비밀번호 | |
 | content | string | 댓글의 내용 | |
-| created_at | string | 댓글이 업데이트 된 시점| |
+| updateAt | string | 댓글이 업데이트 된 시점| |
 
 ### 예시
 
@@ -62,7 +62,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 {
  "password": "3333",
  "content": "정말 좋은 질문입니다.",
- "created_at": "2023-07-10 10:32:23"
+ "updateAt": "2023-07-10 10:32:23"
 }
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
