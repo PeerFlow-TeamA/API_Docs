@@ -33,6 +33,8 @@ Query Parameter : <input type="checkbox" value="Query Parameter" checked>
 | --- | --- | --- | --- |
 | title | string | 검색할 제목, Content의 title에 해당하는 데이터 | |
 | sort | string | 정렬 기준 | lastest, views, recommends 셋 중 하나 |
+| page | integer | 페이지 번호 | |
+| size | integer | 페이지 사이즈 | |
 
 ### 예시
 
