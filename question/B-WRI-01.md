@@ -44,7 +44,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
 | title | string | 질문의 제목 | |
-| nickname | string | 작성자의 nickname | |
 | password | string | 작성자임을 판별할 수 있는 password | |
 | category | string | 질문의 카테고리 | 질문 수정시에는 ft_irc, minishell, minirt 셋 중 하나로 할 것 |
 | content | string | 질문의 내용 | |
@@ -61,7 +60,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
  "title": "미니쉘 우웩",
- "nickname": "san", 
  "password": "1111aaaa", 
  "category": "minishell",
  "content": "다시 질문 드립니다 minishell은 어떤 과제인가요?",

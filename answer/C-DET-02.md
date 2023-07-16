@@ -2,7 +2,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/answer/{answerId}
 
@@ -34,7 +33,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | --- | --- | --- | --- |
 | answerId | int | 답글의 id | |
 
-### Request Body 
+### Request Body
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -44,7 +43,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| nickname | string | 답글 작성자의 닉네임 | |
 | password | string | 답글 작성자임을 판별할 수 있는 password | |
 | content | string | 답글의 내용 | |
 | createdAt | string | 답글 수정 시간 | 답글을 수정하여 수정하기 버튼을 누른 시점을 기준으로 할 것 |

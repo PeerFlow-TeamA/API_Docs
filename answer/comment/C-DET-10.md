@@ -44,7 +44,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| nickname | String | 수정할 댓글의 작성자 닉네임 | |
 | password | String | 댓글을 작성한 사용자가 본인 확인을 위해 입력한 비밀번호 | |
 | content | String | 수정할 댓글의 내용 | |
 | createdAt | string | 댓글을 수정한 시간 | 댓글을 수정하여 수정하기 버튼을 누른 시점을 기준으로 할 것 |

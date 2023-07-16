@@ -2,7 +2,6 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/question/{questionId}/comment/{commentId}
 
@@ -35,7 +34,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | questionId | int | 질문의 id | |
 | commentId | int | 댓글의 id | |
 
-### Request Body 
+### Request Body
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
@@ -45,11 +44,9 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
     Condition은 요청 시 데이터의 조건을 명시해주세요. -->
 | Key | Data-Type | Description | Condition |
 | --- | --- | --- | --- |
-| nickname | string | 댓글 작성자의 닉네임 | |
 | password | string | 댓글 작성자가 본인 확인을 위해 입력한 비밀번호 | |
 | content | string | 댓글의 내용 | |
 | created_at | string | 댓글이 업데이트 된 시점| |
-
 
 ### 예시
 
@@ -63,10 +60,9 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 
 {
-	"nickname": "hyeongki",
-	"password": "3333",
-	"content": "정말 좋은 질문입니다.",
-	"created_at": "2023-07-10 10:32:23"
+ "password": "3333",
+ "content": "정말 좋은 질문입니다.",
+ "created_at": "2023-07-10 10:32:23"
 }
 
 // 아래는 요청할 때의 Query Parameter 데이터 예시입니다.
