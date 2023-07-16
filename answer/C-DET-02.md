@@ -59,7 +59,6 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 
 // 아래는 요청할 때의 Request Body 데이터 예시입니다.
 {
-  "nickname": "hyeongki",
   "password": "1234",
   "content": "minishell 이렇게 하시면 될 것 같아요.",
   "updateAt": "2023-07-01T12:12:12"
