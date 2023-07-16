@@ -2,12 +2,11 @@
 
 ## 공통 정보
 
-
 <!-- 요청 시 URL 입니다. Root url에 대해서는 제외하고 서술합니다. -->
 URL(endpoint): /v1/answer/{answerId}/adopt
 
 <!-- 요청 시 method 입니다. HTTP method를 기준으로 합니다. -->
-method: PATCH
+method: POST
 
 <!-- 요청 시 기능명세 코드 입니다. 보여지는 페이지를 기준으로 합니다. -->
 기능명세 코드: C-DET-04
@@ -34,7 +33,7 @@ Query Parameter : <input type="checkbox" value="Query Parameter">
 | --- | --- | --- | --- |
 | answerId | int | 채택할 답글의 id | |
 
-### Request Body 
+### Request Body
 
 <!-- 요청 시 데이터에 대해 명시하는 테이블입니다. -->
 <!-- Key, Data-Type, Description, Condition 순으로 작성해주세요. -->
